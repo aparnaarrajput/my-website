@@ -323,21 +323,18 @@ ul { list-style: none; }
 }
 .photo-frame {
   position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  aspect-ratio: 3/4;
   background: var(--color-bg-alt);
   box-shadow: var(--shadow-lg);
-  /* Force GPU layer — prevents border-radius compositing blur */
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
-  /* Crisp subpixel rendering */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .profile-photo {
-  /* Absolute fill ensures object-fit works even when parent height
-     comes only from aspect-ratio (avoids stretch in some browsers) */
   position: absolute;
   inset: 0;
   width: 100%;
@@ -871,12 +868,9 @@ ul { list-style: none; }
   }
   .about-photo-col {
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 220px 1fr;
     gap: 24px;
     align-items: start;
-  }
-  .photo-frame {
-    aspect-ratio: 3/4;
   }
   .contact-pills {
     margin-top: 0;
@@ -906,12 +900,23 @@ ul { list-style: none; }
   .research-grid {
     grid-template-columns: 1fr;
   }
+
+  /* Mobile about: photo centered on top, contact pills below, then bio */
   .about-photo-col {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
   }
   .photo-frame {
-    max-width: 240px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 280px;
+    /* aspect-ratio: 3/4 inherited — at 280px wide → 373px tall */
+  }
+  .contact-pills {
+    width: 100%;
+    max-width: 280px;
+    margin-top: 0;
   }
 
   .hero-actions { flex-direction: column; align-items: center; }
