@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aparna Rajput — Mathematician</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Aparna Rajput</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======= HERO ======= -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <canvas id="lorenz-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">    
+      <h1 class="hero-name">Aparna Rajput</h1>
+      <p class="hero-subtitle">Ergodic Theory &amp; Dynamical Systems</p>
+      <p class="hero-institution">Concordia University, Montreal · Toronto, Ontario</p>
+      <div class="hero-actions">
+        <a href="mailto:aparna.ar.rajput@gmail.com" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email Me
+        </a>
+        <a href="https://linkedin.com/in/aparna-rajput-956a16123" target="_blank" rel="noopener" class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+  </section>
+
+  <!-- ======= ABOUT ======= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo-col">
+          <div class="photo-frame">
+            <img src="assets/aparna-img.jpg" alt="Aparna Rajput" class="profile-photo" onerror="this.parentElement.classList.add('photo-placeholder')" />
+            <div class="photo-overlay-text">Add your<br>photo here</div>
+          </div>
+          <div class="contact-pills">
+            <a href="mailto:aparna.ar.rajput@gmail.com" class="contact-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              aparna.ar.rajput@gmail.com
+            </a>
+            <span class="contact-pill no-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Toronto, Ontario
+            </span>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title">Mathematician &amp; Researcher</h2>
+          <p class="about-bio">
+            I am a PhD graduate in Mathematics from Concordia University, Montreal, where I specialized in <strong>ergodic theory</strong> and the operator-theoretic analysis of dynamical systems. My doctoral research, supervised within the Department of Mathematics and Statistics, focused on establishing the quasi-compactness of the <strong>Frobenius–Perron transfer operator</strong> for families of interval maps.
+          </p>
+          <p class="about-bio">
+            My work lies at the intersection of <strong>analysis, probability, and mathematical physics</strong> — studying how probability distributions evolve under repeated transformations, and under what conditions these systems exhibit predictable long-term statistical behavior. I am particularly interested in connections between classical ergodic theory and modern data-driven and statistical modeling approaches.
+          </p>
+          <div class="keyword-tags">
+            <span class="tag">Ergodic Theory</span>
+            <span class="tag">Dynamical Systems</span>
+            <span class="tag">Transfer Operators</span>
+            <span class="tag">Interval Maps</span>
+            <span class="tag">ACIMs</span>
+            <span class="tag">Mathematical Analysis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= RESEARCH INTERESTS ======= -->
+  <section class="section section-alt" id="research">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Focus Areas</div>
+        <h2 class="section-title">Research Interests</h2>
+      </div>
+      <div class="research-grid">
+        <div class="research-card">
+          <div class="research-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <h3>Ergodic Theory</h3>
+          <p>Studying the long-term statistical behavior of dynamical systems, including ergodicity, mixing properties, and the existence of invariant measures.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Dynamical Systems</h3>
+          <p>Analyzing the evolution of interval maps, piecewise expanding maps, and piecewise convex maps with finitely or countably many branches.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
+          </div>
+          <h3>Transfer Operators</h3>
+          <p>Investigating the spectral theory of the Frobenius–Perron operator, with emphasis on quasi-compactness and the structure of the essential spectrum.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Absolutely Continuous Invariant Measures</h3>
+          <p>Establishing existence and uniqueness of ACIMs for broad classes of non-uniformly expanding maps using functional-analytic methods.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Statistical Modeling</h3>
+          <p>Exploring the connections between classical ergodic results and modern probabilistic and data-driven modeling frameworks.</p>
+        </div>
+        <div class="research-card">
+          <div class="research-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3>Functional Analysis</h3>
+          <p>Applying tools from Banach space theory, spectral theory, and operator algebras to problems in mathematical physics and probability theory.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PUBLICATIONS ======= -->
+  <section class="section" id="publications">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Research Output</div>
+        <h2 class="section-title">Publications</h2>
+      </div>
+      <div class="publications-list">
+
+        <div class="publication-item">
+          <div class="pub-year-badge">2026</div>
+          <div class="pub-content">
+            <p class="pub-authors">Góra, P., &amp; <strong>Rajput, A.</strong></p>
+            <p class="pub-title">"Quasi-compactness of Frobenius–Perron operator for piecewise convex maps with countably many branches."</p>
+            <p class="pub-journal"><em>Dynamical Systems</em></p>
+          </div>
+        </div>
+
+        <div class="publication-item">
+          <div class="pub-year-badge">2025</div>
+          <div class="pub-content">
+            <p class="pub-authors"><strong>Rajput, A.</strong>, &amp; Góra, P.</p>
+            <p class="pub-title">"Quasi-compactness of Frobenius–Perron operator for piecewise expanding C<sup>1+ε</sup> maps of an interval."</p>
+            <p class="pub-journal"><em>Stochastics and Dynamics</em></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= TEACHING ======= -->
+  <section class="section section-alt" id="teaching">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Academic Service</div>
+        <h2 class="section-title">Teaching Experience</h2>
+      </div>
+      <div class="teaching-grid">
+        <div class="teaching-block">
+          <div class="teaching-header">
+            <div class="teaching-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+            </div>
+            <div>
+              <h3>Teaching Assistant &amp; Marker</h3>
+              <p class="teaching-institution">Concordia University, Montreal · 2019 – 2025</p>
+            </div>
+          </div>
+          <p class="teaching-desc">Graded assignments, supported course instruction, and assisted students with proofs and problem solving across undergraduate mathematics courses.</p>
+          <div class="course-list">
+            <div class="course-item">
+              <span class="course-code">MATH 201</span>
+              <span class="course-name">Calculus</span>
+            </div>
+            <div class="course-item">
+              <span class="course-code">MATH 201 EC</span>
+              <span class="course-name">Elementary Functions</span>
+            </div>
+            <div class="course-item">
+              <span class="course-code">MATH 203</span>
+              <span class="course-name">Differential &amp; Integral Calculus</span>
+            </div>
+            <div class="course-item">
+              <span class="course-code">MATH 206</span>
+              <span class="course-name">Algebra &amp; Functions</span>
+            </div>
+            <div class="course-item">
+              <span class="course-code">MATH 364</span>
+              <span class="course-name">Analysis I</span>
+            </div>
+            <div class="course-item">
+              <span class="course-code">MATH 365</span>
+              <span class="course-name">Analysis II</span>
+            </div>
+            <div class="course-item">
+              <span class="course-code">MATH 370</span>
+              <span class="course-name">Differential Equations</span>
+            </div>
+            <div class="course-item">
+              <span class="course-code">MATH 475</span>
+              <span class="course-name">Discrete Dynamical Systems</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="teaching-block">
+          <div class="teaching-header">
+            <div class="teaching-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div>
+              <h3>Content Writer</h3>
+              <p class="teaching-institution">Atharva Academy</p>
+            </div>
+          </div>
+          <p class="teaching-desc">Developed comprehensive mathematics content and problem sets for students preparing for college entrance examinations. Focused on clarity, rigor, and accessibility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= AWARDS ======= -->
+  <section class="section" id="awards">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Recognition</div>
+        <h2 class="section-title">Awards &amp; Honors</h2>
+      </div>
+      <div class="awards-timeline">
+
+        <div class="award-item">
+          <div class="award-dot"></div>
+          <div class="award-card">
+            <div class="award-top">
+              <h3 class="award-name">Concordia International Tuition Award of Excellence</h3>
+              <span class="award-year">2019 – 2023</span>
+            </div>
+            <p class="award-institution">Concordia University, Montreal</p>
+            <p class="award-detail">CAD $37,915 over eight terms — awarded in recognition of academic excellence to international graduate students.</p>
+          </div>
+        </div>
+
+        <div class="award-item">
+          <div class="award-dot"></div>
+          <div class="award-card">
+            <div class="award-top">
+              <h3 class="award-name">Faculty of Arts and Science Fellowship</h3>
+              <span class="award-year">2019 – 2023</span>
+            </div>
+            <p class="award-institution">Concordia University, Montreal</p>
+            <p class="award-detail">$14,000 per year — competitive fellowship supporting doctoral research in the Faculty of Arts and Science.</p>
+          </div>
+        </div>
+
+        <div class="award-item">
+          <div class="award-dot"></div>
+          <div class="award-card">
+            <div class="award-top">
+              <h3 class="award-name">Mrs. Manohar Lal Silver Medal</h3>
+              <span class="award-year">2014</span>
+            </div>
+            <p class="award-institution">Janki Devi Memorial College, University of Delhi</p>
+            <p class="award-detail">Awarded to the most outstanding student in Mathematics at the university level.</p>
+          </div>
+        </div>
+
+        <div class="award-item">
+          <div class="award-dot"></div>
+          <div class="award-card">
+            <div class="award-top">
+              <h3 class="award-name">Certificate of Merit — Highest Marks in Mathematics (Honours)</h3>
+              <span class="award-year">2014</span>
+            </div>
+            <p class="award-institution">Janki Devi Memorial College, University of Delhi</p>
+            <p class="award-detail">Recognized for achieving the highest marks in the Mathematics Honours program.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= EDUCATION ======= -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Academic Background</div>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-timeline">
+
+        <div class="edu-item">
+          <div class="edu-marker">
+            <div class="edu-dot"></div>
+            <div class="edu-line"></div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-degree-row">
+              <h3 class="edu-degree">Doctor of Philosophy — Mathematics</h3>
+              <span class="edu-years">2019 – 2025</span>
+            </div>
+            <p class="edu-institution">Concordia University, Montreal, Canada</p>
+            <p class="edu-thesis">Thesis: Quasi-compactness of the Frobenius–Perron operator for two classes of interval maps</p>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-marker">
+            <div class="edu-dot"></div>
+            <div class="edu-line"></div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-degree-row">
+              <h3 class="edu-degree">Master of Science — Mathematics</h3>
+              <span class="edu-years">2015 – 2017</span>
+            </div>
+            <p class="edu-institution">Dr. B. R. Ambedkar NIT Jalandhar, Punjab, India</p>
+            <p class="edu-thesis">Thesis: Solving Legendre's differential equation using the Frobenius method (Maple &amp; Mathematica)</p>
+          </div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-marker">
+            <div class="edu-dot"></div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-degree-row">
+              <h3 class="edu-degree">Bachelor of Science — Mathematics (Honours)</h3>
+              <span class="edu-years">2011 – 2014</span>
+            </div>
+            <p class="edu-institution">Janki Devi Memorial College, University of Delhi, India</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SKILLS ======= -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Tools &amp; Languages</div>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-icon skill-python">Py</div>
+          <span>Python</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon skill-math">W</div>
+          <span>Wolfram Mathematica</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon skill-maple">M</div>
+          <span>Maple</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon skill-matlab">ML</div>
+          <span>MATLAB</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon skill-maxima">Mx</div>
+          <span>Maxima</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT / FOOTER ======= -->
+  <footer class="footer" id="contact">
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--color-bg)"/></svg>
+    </div>
+    <div class="footer-inner">
+      <div class="container">
+        <h2 class="footer-title">Get In Touch</h2>
+        <p class="footer-sub">I am open to academic collaborations, postdoctoral opportunities, and research discussions.</p>
+        <div class="footer-links">
+          <a href="mailto:aparna.ar.rajput@gmail.com" class="footer-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            aparna.ar.rajput@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/aparna-rajput-956a16123" target="_blank" rel="noopener" class="footer-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn Profile
+          </a>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="footer-copy">&copy; 2025 Aparna Rajput · PhD Mathematics, Concordia University</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
